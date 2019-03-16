@@ -1,0 +1,20 @@
+state={
+	id=843
+	name="STATE_843"
+	provinces={
+		286 653 950 2331 2332 2519 3237 3605 3700 3764 3963 4348 5667 5716 6052 6839 7073 7363 7572 7760 8468 9186 9714 10098 10325 10551 22024 22039 22050 22070 22082 22085 22100 22102 22111 22112 22134 22139 22165 22175 22182 22200 22202 22204 22205 22223 22241 22253
+	}
+	manpower=102535
+	buildings_max_level_factor=1.000
+	state_category = rural
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 2
+	industrial_complex =
+	arms_factory =
+	air_base =
+	}
+	}
+}

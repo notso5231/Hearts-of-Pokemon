@@ -1,0 +1,100 @@
+add_namespace = sinnoh
+country_event = {
+	id = sinnoh.1
+	title = sinnoh.1.t
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	desc = sinnoh.1.d
+	option = {
+	name = sinnoh.1.a
+
+		add_political_power = -200
+		set_variable = {
+		var = cynthia_abdicate
+		value = true
+		}
+		swap_ideas = {
+				remove_idea = SIN_Cynthia
+				add_idea = SIN_Champ_Abdicate
+			}
+
+	}
+
+	}
+country_event = {
+	id = sinnoh.2
+	title = sinnoh.2.t
+	desc = sinnoh.2.d
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+	days = 1
+	}
+	trigger = {
+			tag = SIN
+			fascism > .55
+			NOT = {
+			has_idea = far_right_sinnoh_strong
+			}
+		}
+
+	option = {
+	name = sinnoh.2.a
+		add_political_power = -100
+		swap_ideas = {
+				remove_idea = far_right_sinnoh
+				add_idea = SIN_widespread_protest
+			}
+
+	}
+	option = {
+	name = sinnoh.2.b
+		custom_effect_tooltip = sinnoh.2.b.tt
+		swap_ideas = {
+				remove_idea = far_right_sinnoh
+				add_idea = far_right_sinnoh_strong
+			}
+
+	}
+
+
+	}
+country_event = {
+id = sinnoh.5
+title = sinnoh.5.t
+desc = sinnoh.5.d
+fire_only_once = yes
+is_triggered_only = yes
+	option = {
+	name = sinnoh.2.a
+	stability_factor = 0.2
+	create_country_leader = {
+	name = "Barry"
+	desc = "POLITICS_SIN_BARRY_DESC"
+	expire = "2400.1.1"
+	ideology = liberalism
+	}
+	option = {
+	name = sinnoh.2.b
+	stability_factor = 0.1
+	create_country_leader = {
+	name = "Jubilife Jenny"
+	desc = "POLITICS_SIN_JENNY_DESC"
+	expire = "2400.1.1"
+	ideology = "conservatism"
+	}
+	option = {
+	name = sinnoh.2.c
+	create_country_leader = {
+	name = "Mr. Contesta"
+	desc = "POLITICS_SIN_CONTESTA_DESC"
+	expire = "2400.1.1"
+	ideology = "conservatism"
+	}
+	}
+	}
+	}
+	}
+
+}

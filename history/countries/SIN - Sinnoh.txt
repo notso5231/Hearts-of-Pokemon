@@ -1,0 +1,48 @@
+capital = 1
+set_research_slots = 4
+set_stability = -0.1
+set_war_support = 0.3
+set_technology = {
+infantry_weapons = 1
+}
+oob = "SIN_2032"
+
+set_politics = {
+parties = {
+democratic = {
+	popularity = 5
+	}
+fascism = {
+	popularity = 15
+	}
+neutrality = {
+	popularity = 80
+	}
+	}
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+add_ideas = {
+	far_right_sinnoh
+	SIN_Cynthia
+		}
+	create_country_leader = {
+	name = "Champion Cynthia"
+	desc = "POLITICS_CHAMPION_CYNTHIA_DESC"
+	picture = "gfx/leaders/SIN_Cynthia.dds"
+	expire = "2400.1.1"
+	ideology = despotism
+	traits = {
+
+		}
+		}
+	create_country_leader = {
+	name = "Sinnoh Provisional Authority"
+	desc = "POLITICS_SIN_PROVISIONAL_DESC"
+	picture = "gfx/leaders/SIN_Provisional.dds"
+	expire = "2400.1.1"
+	ideology = conservatism
+	traits = {
+
+	}
+	}

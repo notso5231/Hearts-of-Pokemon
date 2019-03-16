@@ -1,0 +1,20 @@
+state={
+	id=147
+	name="STATE_147"
+	provinces={
+		5752 7313 19481 19527 19588 19596 19629 19630
+	}
+	manpower=2183
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 1
+	industrial_complex =
+	arms_factory =
+	air_base =
+	}
+	}
+}

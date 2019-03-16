@@ -1,0 +1,13 @@
+state={
+	id=2
+	name="STATE_2"
+	provinces={
+		1271 2137 5464 5968 6319 8755 8883 9930 10574 10757 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	}
+}

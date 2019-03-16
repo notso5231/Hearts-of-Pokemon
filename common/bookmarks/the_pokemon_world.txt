@@ -1,0 +1,22 @@
+bookmarks = {
+	bookmark = {
+		name = "POKEMON_WORLD_NAME"
+		desc = "POKEMON_WORLD_DESC"
+		date = 2032.4.3.6
+		picture = "GFX_select_date_1936"
+		default_country = "SIN"
+		default = yes
+			"SIN"={
+			history = "SIN_POKEMON_WORLD_DESC"
+			ideology = neutrality
+			ideas = {
+			SIN_Cynthia
+			far_right_sinnoh
+			}
+			focuses = {
+			SIN_Champion_Kaiserin
+			SIN_Crush_Leagues
+			SIN_Champ_Abdicate
+			}
+			}
+			}

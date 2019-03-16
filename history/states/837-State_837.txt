@@ -1,0 +1,27 @@
+state={
+	id=837
+	name="STATE_837"
+	provinces={
+		693 786 909 1956 2786 4029 4305 4394 4936 5132 5507 6284 6935 7104 7124 7712 7784 8142 8368 8489 9083 21898 21923 21929 21949 21950 21968 21975 21987 21995 21999 22013 22032 22049 22054 22060 22068 22069 22097 22116 22154 22163 22173 22186 22222
+	}
+	manpower=271415
+	buildings_max_level_factor=1.000
+	state_category = town
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 3
+	industrial_complex = 1
+
+	air_base = 2
+	}
+	victory_points = {
+	22049 3
+
+	}
+	victory_points = {
+	7784 3
+	}
+	}
+	}

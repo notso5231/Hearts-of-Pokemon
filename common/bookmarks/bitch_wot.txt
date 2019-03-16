@@ -1,0 +1,14 @@
+bookmarks = {
+	bookmark = {
+		name = "WELTKRIEG_NAME"
+		desc = "WELTKRIEG_DESC"
+		date = 2037.2.11.18
+		picture = "GFX_select_date_1939"
+		default_country = "SIN"
+		default = yes
+			"SIN"={
+			history = "SIN_WELTKRIEG_DESC"
+			ideology = fascism
+			}
+			}
+			}

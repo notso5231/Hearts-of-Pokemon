@@ -1,0 +1,634 @@
+focus_tree = {
+	id = Sinnoh
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIN
+		}
+	}
+	default = no
+	focus = {
+		id = SIN_Political
+		text = SIN_Political
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		x = 13
+		y = 0
+			completion_reward = {
+					add_political_power = 120
+				}
+
+	}
+	focus = {
+		id = SIN_Support_Right_Wing
+		text = SIN_Support_Right_Wing
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Political
+		}
+		mutually_exclusive = {
+			focus = SIN_Oppose_Fascism
+			focus = SIN_Challenge_Champion
+		}
+		x = 5
+		y = 1
+			bypass = {
+					has_idea = far_right_sinnoh_strong
+				}
+			available = {
+					has_government = neutrality
+					OR = {
+							has_idea = far_right_sinnoh
+							has_idea = far_right_sinnoh_strong
+						}
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = far_right_sinnoh
+							add_idea = far_right_sinnoh_strong
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Right_Ministers
+		icon = GFX_focus_SAF_support_ossewabrandwag
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Support_Right_Wing
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = SIN_National_Pride
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Support_Right_Wing
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = SIN_Nat_Coup
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_National_Pride
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = SIN_Our_Champ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Nat_Coup
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SIN_Oppose_Fascism
+		text = SIN_Oppose_Fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Political
+		}
+		mutually_exclusive = {
+			focus = SIN_Support_Right_Wing
+			focus = SIN_Challenge_Champion
+		}
+		x = 13
+		y = 1
+			available = {
+					has_government = neutrality
+					has_idea = far_right_sinnoh
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = far_right_sinnoh
+							add_idea = far_right_sinnoh_2
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Authoritarian
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Oppose_Fascism
+		}
+		mutually_exclusive = {
+			focus = SIN_Reinforce_Jenny
+			focus = SIN_Propaganda
+		}
+		x = 11
+		y = 2
+			available = {
+					neutrality > .60
+				}
+			completion_reward = {
+					add_stability = 0.1
+					add_ideas = SIN_Authoritarian
+				}
+
+	}
+	focus = {
+		id = SIN_Reinforce_Champion
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Authoritarian
+		}
+		x = 11
+		y = 3
+			available = {
+					neutrality > .6
+					ruling_party = neutrality
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_Authoritarian
+							add_idea = SIN_Monarchism
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Champion_Kaiserin
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Reinforce_Champion
+		}
+		x = 11
+		y = 4
+			available = {
+					neutrality > .7
+					ruling_party = neutrality
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_Monarchism
+							add_idea = SIN_Kaiserin
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Monarch
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Champion_Kaiserin
+			focus = SIN_Our_Champ
+		}
+		mutually_exclusive = {
+			focus = SIN_Defend_Tradition
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = SIN_Champ_Comp
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Monarch
+		}
+		prerequisite = {
+			focus = SIN_Our_Champ
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = SIN_Absolutism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Monarch
+		}
+		prerequisite = {
+			focus = SIN_Champion_Kaiserin
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = SIN_Reinforce_Jenny
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIN_Oppose_Fascism
+		}
+		mutually_exclusive = {
+			focus = SIN_Authoritarian
+		}
+		x = 13
+		y = 2
+			available = {
+					has_government = neutrality
+					fascism > .30
+					fascism < .50
+				}
+			completion_reward = {
+					add_ideas = SIN_Police
+				}
+
+	}
+	focus = {
+		id = SIN_Propaganda
+		text = SIN_Propaganda
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
+		prerequisite = {
+			focus = SIN_Oppose_Fascism
+		}
+		mutually_exclusive = {
+			focus = SIN_Authoritarian
+		}
+		x = 15
+		y = 2
+			available = {
+					has_government = neutrality
+					fascism > .25
+				}
+			completion_reward = {
+					add_ideas = SIN_Propaganda
+					stability_factor = 0.1
+				}
+
+	}
+	focus = {
+		id = SIN_Crush_Leagues
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Propaganda
+		}
+		prerequisite = {
+			focus = SIN_Reinforce_Jenny
+		}
+		x = 14
+		y = 3
+			available = {
+					has_government = neutrality
+					fascism < .50
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = far_right_sinnoh_2
+							add_idea = SIN_Right_Ban
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Defend_Tradition
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Champion_Kaiserin
+			focus = SIN_Crush_Leagues
+		}
+		mutually_exclusive = {
+			focus = SIN_Monarch
+		}
+		x = 13
+		y = 5
+			available = {
+					has_government = neutrality
+					fascism < .20
+					democratic < .25
+					communist < .10
+				}
+			completion_reward = {
+					add_ideas = SIN_Military_Tradition
+				}
+
+	}
+	focus = {
+		id = SIN_Challenge_Champion
+		text = SIN_Challenge_Champion
+		icon = GFX_focus_rom_handle_king
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Political
+		}
+		mutually_exclusive = {
+			focus = SIN_Support_Right_Wing
+			focus = SIN_Oppose_Fascism
+		}
+		x = 20
+		y = 1
+			available = {
+					neutrality < .25
+					has_idea = SIN_widespread_protest
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_widespread_protest
+							add_idea = SIN_new_path
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Democracy
+		text = SIN_Democracy
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Challenge_Champion
+		}
+		mutually_exclusive = {
+			focus = SIN_Communism
+		}
+		x = 19
+		y = 2
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_new_path
+							add_idea = SIN_dem_path
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Champ_Abdicate
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Democracy
+		}
+		mutually_exclusive = {
+			focus = SIN_CON_MON
+		}
+		x = 17
+		y = 3
+			available = {
+					democratic > .50
+				}
+			completion_reward = {
+					country_event = {
+							id = sinnoh.1
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Elections
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Champ_Abdicate
+		}
+		x = 16
+		y = 4
+			available = {
+					democratic > .45
+					neutrality < .45
+				}
+			completion_reward = {
+					set_politics = {
+							ruling_party = democratic
+							elections_allowed = true
+							election_frequency = 60
+						}
+					country_event = {
+							id = sinnoh.5
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Stabilize_Nation
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Champ_Abdicate
+		}
+		x = 18
+		y = 4
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_Champ_Abdicate
+							add_idea = SIN_Champ_Abdicate_2
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_CON_MON
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Democracy
+		}
+		mutually_exclusive = {
+			focus = SIN_Champ_Abdicate
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = SIN_Communism
+		text = SIN_Communism
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Challenge_Champion
+		}
+		mutually_exclusive = {
+			focus = SIN_Democracy
+		}
+		x = 22
+		y = 2
+			available = {
+					communism > .30
+				}
+			completion_reward = {
+					swap_ideas = {
+							add_idea = SIN_com_path
+							remove_idea = SIN_new_path
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_March_Jubilife
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Communism
+		}
+		x = 24
+		y = 3
+			available = {
+					communism > .4
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_com_path
+							add_idea = SIN_com_path_2
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_March_League
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_March_Jubilife
+		}
+		x = 24
+		y = 4
+			available = {
+					communism > .75
+				}
+			completion_reward = {
+					remove_ideas = SIN_com_path
+					country_event = {
+							id = sinnoh.3
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Exile_Champ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_March_League
+		}
+		mutually_exclusive = {
+			focus = SIN_Kill_Champ
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = SIN_End_Authoritarian
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Elections
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = SIN_Normalcy
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Crush_Leagues
+			focus = SIN_End_Authoritarian
+		}
+		x = 15
+		y = 6
+			available = {
+					fascism < .20
+				}
+			completion_reward = {
+					remove_ideas = SIN_Right_Ban
+					remove_ideas = SIN_Propaganda
+					remove_ideas = SIN_Police
+					remove_ideas = SIN_Champion_Support
+					remove_ideas = SIN_Enforced_Democracy
+					add_ideas = SIN_Normalcy
+				}
+
+	}
+	focus = {
+		id = SIN_Normalcy_2
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Normalcy
+		}
+		x = 15
+		y = 7
+			available = {
+					fascism < .15
+				}
+			completion_reward = {
+					add_stability = -.05
+					swap_ideas = {
+							remove_idea = SIN_Normalcy
+							add_idea = SIN_Normalcy_2
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_Normalcy_3
+		icon = GFX_goal_generic_national_unity
+		cost = 20.00
+		prerequisite = {
+			focus = SIN_Normalcy_2
+		}
+		x = 15
+		y = 8
+			available = {
+					fascism < .1
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = SIN_Normalcy_2
+							add_idea = SIN_Normalcy_3
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_New_League
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Normalcy_3
+		}
+		prerequisite = {
+			focus = SIN_End_Authoritarian
+		}
+		x = 16
+		y = 9
+			completion_reward = {
+					add_stability = 0.15
+				}
+
+	}
+	focus = {
+		id = SIN_Kill_Champ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_March_League
+		}
+		mutually_exclusive = {
+			focus = SIN_Exile_Champ
+		}
+		x = 27
+		y = 5
+
+	}
+}

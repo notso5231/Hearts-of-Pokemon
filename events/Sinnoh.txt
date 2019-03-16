@@ -31,13 +31,15 @@ country_event = {
 	mean_time_to_happen = {
 	days = 1
 	}
+
 	trigger = {
-			tag = SIN
-			fascism > .55
-			NOT = {
-			has_idea = far_right_sinnoh_strong
-			}
-		}
+SIN = {
+fascism > .55
+NOT = {
+has_idea = far_right_sinnoh_strong
+}
+}
+}
 
 	option = {
 	name = sinnoh.2.a

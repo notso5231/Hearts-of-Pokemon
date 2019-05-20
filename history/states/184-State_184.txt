@@ -2,8 +2,16 @@ state={
 	id=184
 	name="STATE_184"
 	provinces={
-		610 1912 2246 3260 4231 5549 8703 9129 10101 20611 20641 20654 20677 20679 20701 20740 20744 20753 20779 
+		1066 2529 2933 2970 3486 4823
 	}
-	manpower=0
+	manpower=22895
+	state_category=small_island
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SEV
+	buildings = {
+	infrastructure = 2
+	}
+	add_core_of = SEV
+	}
 }

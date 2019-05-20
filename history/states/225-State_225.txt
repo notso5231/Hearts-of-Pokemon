@@ -2,8 +2,23 @@ state={
 	id=225
 	name="STATE_225"
 	provinces={
-		1704 21635 21672 21725 21767 
+		214 2001 2962 4154 5153 8392 8402
 	}
-	manpower=0
+	manpower=45363
 	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 2
+	industrial_complex = 0
+	arms_factory = 0
+	dockyard = 0
+	air_base = 0
+	5153 = {
+	naval_base = 3
+	}
+	}
+	}
 }

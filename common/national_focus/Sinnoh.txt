@@ -21,6 +21,41 @@ focus_tree = {
 
 	}
 	focus = {
+		id = generic_alignment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 29
+		y = 0
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = SIN_Celestic_Plan
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = SIN_Autarky
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 41
+		y = 1
+
+	}
+	focus = {
+		id = SIN_Construction_Research
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		x = 45
+		y = 1
+
+	}
+	focus = {
 		id = SIN_Support_Right_Wing
 		text = SIN_Support_Right_Wing
 		icon = GFX_focus_ger_reichskommisariats
@@ -32,7 +67,7 @@ focus_tree = {
 			focus = SIN_Oppose_Fascism
 			focus = SIN_Challenge_Champion
 		}
-		x = 5
+		x = 6
 		y = 1
 			bypass = {
 					has_idea = far_right_sinnoh_strong
@@ -59,7 +94,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SIN_Support_Right_Wing
 		}
-		x = 4
+		x = 3
 		y = 2
 
 	}
@@ -67,6 +102,13 @@ focus_tree = {
 		id = SIN_National_Pride
 		icon = GFX_focus_generic_support_the_left_right
 		cost = 10.00
+			completion_reward = {
+				add_political_power = 75
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
 		prerequisite = {
 			focus = SIN_Support_Right_Wing
 		}
@@ -75,22 +117,45 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIN_Nat_Coup
+		id = SIN_Nat_Champ
 		icon = GFX_goal_support_fascism
 		cost = 10.00
 		prerequisite = {
 			focus = SIN_National_Pride
 		}
+		completion_reward = {
+			country_event = {id = sinnoh.8 days = 1}
+		}
 		x = 7
 		y = 3
 
+	}
+	focus =  {
+		id = SIN_Military_Police
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIN_Nat_Champ
+		}
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			custom_effect_tooltip = SIN_Military_Police_tt
+			hidden_effect = {
+				load_oob = "SIN_police"
+			}
+		}
+
+		x = 6
+		y = 4
 	}
 	focus = {
 		id = SIN_Our_Champ
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SIN_Nat_Coup
+			focus = SIN_Nat_Champ
 		}
 		x = 8
 		y = 4
@@ -155,7 +220,7 @@ focus_tree = {
 		y = 3
 			available = {
 					neutrality > .6
-					ruling_party = neutrality
+					has_government = neutrality
 				}
 			completion_reward = {
 					swap_ideas = {
@@ -176,7 +241,7 @@ focus_tree = {
 		y = 4
 			available = {
 					neutrality > .7
-					ruling_party = neutrality
+					has_government = neutrality
 				}
 			completion_reward = {
 					swap_ideas = {
@@ -202,6 +267,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SIN_Absolutism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Monarch
+		}
+		prerequisite = {
+			focus = SIN_Champion_Kaiserin
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
 		id = SIN_Champ_Comp
 		icon = GFX_goal_generic_military_deal
 		cost = 10.00
@@ -216,17 +295,50 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIN_Absolutism
+		id = SIN_Central_Reform
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SIN_Monarch
-		}
-		prerequisite = {
-			focus = SIN_Champion_Kaiserin
+			focus = SIN_Absolutism
 		}
 		x = 11
-		y = 6
+		y = 7
+
+	}
+	focus = {
+		id = SIN_Protection_Orange
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Central_Reform
+		}
+		mutually_exclusive = {
+			focus = SIN_Escalate_Sinnoh_Sea
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = SIN_Orange_Bases
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Protection_Orange
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = SIN_Power_Projection
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Orange_Bases
+		}
+		x = 12
+		y = 10
 
 	}
 	focus = {
@@ -315,11 +427,22 @@ focus_tree = {
 					has_government = neutrality
 					fascism < .20
 					democratic < .25
-					communist < .10
+					communism < .10
 				}
 			completion_reward = {
 					add_ideas = SIN_Military_Tradition
 				}
+
+	}
+	focus = {
+		id = SIN_League_Focus
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Orange_Bases
+		}
+		x = 14
+		y = 10
 
 	}
 	focus = {
@@ -370,6 +493,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SIN_CON_MON
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Democracy
+		}
+		mutually_exclusive = {
+			focus = SIN_Champ_Abdicate
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
 		id = SIN_Champ_Abdicate
 		icon = GFX_goal_tfv_sever_ties_with_uk
 		cost = 10.00
@@ -379,7 +516,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SIN_CON_MON
 		}
-		x = 17
+		x = 20
 		y = 3
 			available = {
 					democratic > .50
@@ -392,38 +529,13 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIN_Elections
-		icon = GFX_goal_support_democracy
-		cost = 10.00
-		prerequisite = {
-			focus = SIN_Champ_Abdicate
-		}
-		x = 16
-		y = 4
-			available = {
-					democratic > .45
-					neutrality < .45
-				}
-			completion_reward = {
-					set_politics = {
-							ruling_party = democratic
-							elections_allowed = true
-							election_frequency = 60
-						}
-					country_event = {
-							id = sinnoh.5
-						}
-				}
-
-	}
-	focus = {
 		id = SIN_Stabilize_Nation
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		prerequisite = {
 			focus = SIN_Champ_Abdicate
 		}
-		x = 18
+		x = 19
 		y = 4
 			completion_reward = {
 					swap_ideas = {
@@ -434,17 +546,64 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIN_CON_MON
-		icon = GFX_focus_generic_treaty
+		id = SIN_Further_Stability
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SIN_Democracy
+			focus = SIN_Stabilize_Nation
 		}
-		mutually_exclusive = {
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = SIN_Elections
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
 			focus = SIN_Champ_Abdicate
 		}
-		x = 20
-		y = 3
+		x = 21
+		y = 4
+			available = {
+					democratic > .45
+					neutrality < .45
+				}
+			completion_reward = {
+					set_politics = {
+							ruling_party = democratic
+							elections_allowed = yes
+							election_frequency = 60
+						}
+					country_event = {
+							id = sinnoh.5
+						}
+				}
+
+	}
+	focus = {
+		id = SIN_End_Authoritarian
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Elections
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = SIN_Stable_Position
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_End_Authoritarian
+		}
+		prerequisite = {
+			focus = SIN_Further_Stability
+		}
+		x = 19
+		y = 6
 
 	}
 	focus = {
@@ -493,7 +652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIN_March_League
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_burn_the_royal_portraits
 		cost = 10.00
 		prerequisite = {
 			focus = SIN_March_Jubilife
@@ -526,13 +685,266 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIN_End_Authoritarian
-		icon = GFX_focus_rom_abdicate
+		id = SIN_11_Demands
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SIN_Elections
+			focus = SIN_Exile_Champ
 		}
-		x = 16
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = SIN_Internal_Revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_11_Demands
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = SIN_Orange_Lands
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_11_Demands
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = dialga_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = generic_alignment
+		}
+		mutually_exclusive = {
+			focus = palkia_alignment
+			focus = giratina_alignment
+		}
+		x = 27
+		y = 1
+			completion_reward = {
+					add_ideas = SIN_dialga
+				}
+
+	}
+	focus = {
+		id = giratina_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = generic_alignment
+		}
+		mutually_exclusive = {
+			focus = dialga_alignment
+			focus = palkia_alignment
+		}
+		x = 29
+		y = 1
+			completion_reward = {
+					add_ideas = SIN_giratina
+				}
+
+	}
+	focus = {
+		id = palkia_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = generic_alignment
+		}
+		mutually_exclusive = {
+			focus = dialga_alignment
+			focus = giratina_alignment
+		}
+		x = 31
+		y = 1
+			completion_reward = {
+					add_ideas = SIN_palkia
+				}
+
+	}
+	focus = {
+		id = mythical_alignment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = palkia_alignment
+			focus = giratina_alignment
+			focus = dialga_alignment
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = manaphy_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mythical_alignment
+		}
+		mutually_exclusive = {
+			focus = phione_alignment
+			focus = darkrai_alignment
+			focus = shaymin_alignment
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = phione_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mythical_alignment
+		}
+		mutually_exclusive = {
+			focus = manaphy_alignment
+			focus = darkrai_alignment
+			focus = shaymin_alignment
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = darkrai_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mythical_alignment
+		}
+		mutually_exclusive = {
+			focus = manaphy_alignment
+			focus = shaymin_alignment
+			focus = phione_alignment
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = shaymin_alignment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mythical_alignment
+		}
+		mutually_exclusive = {
+			focus = manaphy_alignment
+			focus = darkrai_alignment
+			focus = phione_alignment
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = arceus_save_sinnoh
+		icon = GFX_goal_unknown
+		cost = 50.00
+		prerequisite = {
+			focus = darkrai_alignment
+			focus = shaymin_alignment
+			focus = phione_alignment
+			focus = manaphy_alignment
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = SIN_Arbeitsfront
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Celestic_Plan
+		}
+		x = 36
+		y = 2
+
+	}
+	focus = {
+		id = SIN_Peaceful_Prosperity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Arbeitsfront
+		}
+		mutually_exclusive = {
+			focus = SIN_Prepare_War
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = SIN_Jubilife_Plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Celestic_Plan
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = SIN_Prepare_War
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Jubilife_Plan
+		}
+		mutually_exclusive = {
+			focus = SIN_Peaceful_Prosperity
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = SIN_Oil
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Autarky
+		}
+		x = 41
+		y = 2
+
+	}
+	focus = {
+		id = SIN_Industrial_Supremacy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Construction_Research
+		}
+		x = 44
+		y = 2
+
+	}
+	focus = {
+		id = SIN_Kill_Champ
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_March_League
+		}
+		mutually_exclusive = {
+			focus = SIN_Exile_Champ
+		}
+		x = 28
 		y = 5
 
 	}
@@ -542,7 +954,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = SIN_Crush_Leagues
-			focus = SIN_End_Authoritarian
+			focus = SIN_Cede_Power
 		}
 		x = 15
 		y = 6
@@ -581,54 +993,130 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SIN_Normalcy_3
-		icon = GFX_goal_generic_national_unity
-		cost = 20.00
+		id = SIN_Cede_Power
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
-			focus = SIN_Normalcy_2
+			focus = SIN_CON_MON
 		}
-		x = 15
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = SIN_Restore_Territories
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Stable_Position
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = SIN_19_Demands
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Kill_Champ
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = SIN_Orange_Revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_19_Demands
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = SIN_Export_Revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_19_Demands
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = SIN_Revolutionary_Economy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Orange_Revolution
+			focus = SIN_Orange_Lands
+		}
+		x = 26
 		y = 8
-			available = {
-					fascism < .1
-				}
-			completion_reward = {
-					swap_ideas = {
-							remove_idea = SIN_Normalcy_2
-							add_idea = SIN_Normalcy_3
-						}
-				}
 
 	}
 	focus = {
-		id = SIN_New_League
+		id = SIN_Escalate_Sinnoh_Sea
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SIN_Normalcy_3
-		}
-		prerequisite = {
-			focus = SIN_End_Authoritarian
-		}
-		x = 16
-		y = 9
-			completion_reward = {
-					add_stability = 0.15
-				}
-
-	}
-	focus = {
-		id = SIN_Kill_Champ
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = SIN_March_League
+			focus = SIN_Central_Reform
+			focus = SIN_Reeducation
 		}
 		mutually_exclusive = {
-			focus = SIN_Exile_Champ
+			focus = SIN_Protection_Orange
 		}
-		x = 27
-		y = 5
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = SIN_Reeducation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Champ_Comp
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = SIN_Demand_Islands
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Escalate_Sinnoh_Sea
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = SIN_Military_Spirit_1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Power_Projection
+			focus = SIN_Demand_Islands
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = SIN_Positionalism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SIN_Cede_Power
+		}
+		x = 17
+		y = 7
 
 	}
 }

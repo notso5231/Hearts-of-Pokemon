@@ -2,8 +2,17 @@ state={
 	id=465
 	name="STATE_465"
 	provinces={
-		177 2513 4475 4625 6781 7554 14076 14121 14161 14177 14223 14228 14274 14300 14380 
+		293 527 917 2983 3714 4917 5276 7111 7144 7147 7172 7193 7200 7221
 	}
-	manpower=0
+	manpower=78549
+	state_category=rural
 	buildings_max_level_factor=1.000
+	history = {
+	owner = HOE
+	buildings = {
+	infrastructure = 2
+	industrial_complex = 1
+	}
+	add_core_of = HOE
+	}
 }

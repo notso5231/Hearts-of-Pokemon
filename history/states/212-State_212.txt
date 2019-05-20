@@ -2,8 +2,19 @@ state={
 	id=212
 	name="STATE_212"
 	provinces={
-		2317 3989 21410 21429 21458 21482 21567 21612 21656 
+		988 1224 1486 3403 3617 3749 4478 4503 5010 8211 8227 8240 8260 8278
 	}
-	manpower=0
+	manpower=72874
 	buildings_max_level_factor=1.000
+	state_category = rural
+	history = {
+	owner = SIN
+	buildings = {
+	infrastructure = 1
+	air_base = 1
+	8240 = {
+	naval_base = 1
+	}
+	}
+	}
 }

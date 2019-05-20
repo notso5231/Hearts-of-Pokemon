@@ -2,12 +2,9 @@ state={
 	id=2
 	name="STATE_2"
 	provinces={
-		1271 2137 5464 5968 6319 8755 8883 9930 10574 10757 
+		80 2913 3952 4377 4687 5505 5506 5539 5557 5590
 	}
-	manpower=0
+	manpower=1 state_category=wasteland
+
 	buildings_max_level_factor=1.000
-	history = {
-	owner = SIN
-	add_core_of = SIN
-	}
 }

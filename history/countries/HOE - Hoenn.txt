@@ -1,0 +1,29 @@
+capital = 195
+set_research_slots = 4
+set_stability = -0.2
+set_war_support = 0.3
+set_technology = {
+infantry_equipment = 1
+early_destroyer = 1
+early_ship_hull_light = 1
+}
+oob = "HOE_2032"
+set_convoys = 213
+set_politics = {
+parties = {
+monarchism = {
+	popularity = 35
+	}
+fascism = {
+	popularity = 5
+	}
+neutrality = {
+	popularity = 60
+	}
+	}
+	ruling_party = neutrality
+	elections_allowed = no
+	}
+add_ideas = {
+	disarmed_nation
+		}

@@ -1,9 +1,20 @@
-state={
-	id=195
-	name="STATE_195"
-	provinces={
-		4160 9680 
-	}
-	manpower=0
-	buildings_max_level_factor=1.000
+state = {
+  id =195
+  name="STATE_195"
+  provinces = {
+    7321 1299 7339 7319 7333 7371 5244 7349 7389 3275 7434 7412 1801 7432 1467 7414 4184 1256 3321 2634 1327
+  }
+  state_category=town
+  manpower=187454
+  history = {
+  owner = HOE
+  buildings = {
+  infrastructure = 4
+  industrial_complex = 2
+  7389 = {
+  naval_base = 3
+  }
+  }
+  add_core_of = HOE
+  }
 }

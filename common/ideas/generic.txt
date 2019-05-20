@@ -1,0 +1,38 @@
+ideas = {
+country = {
+#League ideas
+    general_league_leader_7 = {
+    picture = GFX_idea_league_7
+      allowed = {
+        always = no
+        }
+      allowed_civil_war = {
+        always = yes
+        }
+      removal_cost = -1
+  modifier = {
+      political_power_gain = 0.70
+      send_volunteers_tension = -0.50 #interventionism by the leader
+      generate_wargoal_tension = 0.50 #no wars by majors!
+      #allows certain decisions related to centralisation
+    }
+}
+  general_league_member_7 = {
+      picture = GFX_idea_league_7
+      allowed = {
+        always = no
+        }
+      allowed_civil_war = {
+        always = yes
+      }
+      removal_cost = -1
+    modifier = {
+      political_power_gain = 0.14
+      generate_wargoal_tension = 0.50 #no wars for leaders!
+      guarantee_tension = 0.25 #keep interventionism to the leader
+      send_volunteers_tension = 0.25
+      #allows certain decisions related to centralisation
+    }
+  }
+}
+}

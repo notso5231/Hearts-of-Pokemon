@@ -2,8 +2,17 @@ state={
 	id=130
 	name="STATE_130"
 	provinces={
-		60 870 4451 6193 7091 8377 8670 9145 9888 10017 19092 19142 19155 19188 19204 19240 19250 19264 19300 
+		200 1882 2513 4440 7554 7559 7586
 	}
-	manpower=0
+	manpower=134875
 	buildings_max_level_factor=1.000
+	state_category = town
+	history = {
+	owner = HOE
+	add_core_of = HOE
+	buildings = {
+	infrastructure = 3
+	industrial_complex = 2
+	}
+	}
 }

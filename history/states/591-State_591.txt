@@ -2,8 +2,26 @@ state={
 	id=591
 	name="STATE_591"
 	provinces={
-		81 1757 1968 2149 5630 5975 6359 6687 7286 7609 7955 9093 16840 16878 16884 16928 16929 16987 16997 16998 17023 17053 17054 17059 17086 17103 17112 17117 17146 17167 17177 17210 17218 17315 
+		1040 1081 1210 2151 2412 2572 2733 2878 3023 4370 4591 4735 8182 8192 8204 8235 8254
 	}
-	manpower=0
+	resources = {
+	steel = 23
+	}
+	manpower=1782563
 	buildings_max_level_factor=1.000
+	state_category = city
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 6
+	arms_factory = 0
+	industrial_complex = 4
+	air_base = 2
+	dockyard = 0
+	}
+	victory_points = {
+	3023 25 #oreburgh
+	}
+	}
 }

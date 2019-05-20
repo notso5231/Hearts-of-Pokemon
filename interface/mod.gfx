@@ -8,4 +8,8 @@ spriteTypes = {
 		name = "GFX_idea_generic_monarchism"
 		texturefile = "gfx/interface/ideas/idea_generic_monarchism.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_league_7"
+		texturefile = "gfx/ideas/7MemberLeague.dds"
+	}
 }

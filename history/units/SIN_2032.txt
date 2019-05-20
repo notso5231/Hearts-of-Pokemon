@@ -1,3 +1,6 @@
+instant_effect = {
+add_manpower = 20900
+}
 division_template = {
 	name = "Sinnoh Infantry"
 
@@ -14,3 +17,90 @@ division_template = {
 		infantry = { x = 2 y = 3 }
 		}
 		}
+
+	division_template = {
+		name = "Constable"
+
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+			}
+
+			}
+	division_template = {
+		name = "Capital Force"
+				regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			cavalry = { x = 1 y = 2 }
+			}
+					}
+			division_template = {
+	 	 	name = "Sinnoh Guard"
+
+	 	 	regiments = {
+	 	 		infantry = { x = 0 y = 0 }
+	 	 		infantry = { x = 0 y = 1 }
+	 	 		infantry = { x = 1 y = 0 }
+	 	 		infantry = { x = 1 y = 1 }
+			 	 		}
+					priority = 2
+			 	 		}
+
+	units = {
+		division = {
+		name = "Jubilife Jenny Corps"
+		location = 196
+		division_template = "Capital Force"
+		}
+		division = {
+		name = "Sinnoh Champion Guard"
+		location = 262
+		division_template = "Sinnoh Guard"
+		start_experience_factor = 0.5
+		}
+		division = {
+		name = "Oreburgh Jenny Corps" #mining town
+		location = 3023
+		division_template = "Constable"
+		}
+		division = {
+		name = "Veilstone Jenny Corps" #galactic location
+		location = 8146
+		division_template = "Constable"
+		}
+		division = {
+		name = "Celestic Jenny Corps"
+		location = 8111
+		division_template = "Constable"
+		}
+		division = {
+		name = "Hearthome Jenny Corps"
+		location = 2070
+		division_template = "Constable"
+		}
+		division = {
+		name = "Sunyshore Jenny Corps"
+		location = 2427
+		division_template = "Constable"
+		}
+		division = {
+		name = "League Constable"
+		location = 262
+		division_template = "Constable"
+		}
+		division = {
+		name = "Snowpoint Jenny Corps"
+		location = 7781
+		division_template = "Constable"
+		}
+		division = {
+		name = "Canalave Jenny Corps"
+		location = 2481
+		division_template = "Constable"
+		}
+	}

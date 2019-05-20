@@ -2,8 +2,16 @@ state={
 	id=131
 	name="STATE_131"
 	provinces={
-		6693 9280 19193 19221 19241 19279 19288 
+		2882 7582
 	}
-	manpower=0
+	manpower=10954
 	buildings_max_level_factor=1.000
+	state_category = small_island
+	history = {
+	owner = HOE
+	add_core_of = HOE
+	buildings = {
+	infrastructure = 2
+	}
+	}
 }

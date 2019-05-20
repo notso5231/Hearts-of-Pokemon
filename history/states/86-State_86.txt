@@ -2,8 +2,16 @@ state={
 	id=86
 	name="STATE_86"
 	provinces={
-		7349 8620 9384 10056 17664 17713 17748 
+		4097 4407 5407 7106 7169
 	}
-	manpower=0
+	manpower=34985
 	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history = {
+	owner = HOE
+	add_core_of = HOE
+	buildings = {
+	infrastructure = 3
+	}
+	}
 }

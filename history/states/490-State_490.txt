@@ -2,8 +2,19 @@ state={
 	id=490
 	name="STATE_490"
 	provinces={
-		1233 1336 2524 2861 3217 3255 4002 4865 5218 6699 7355 9495 14491 14519 14550 14555 14601 14634 14656 14677 14691 14718 14731 14761 14774 14795 14826 14834 14876 
+		776 1272 1421 1444 2085 2366 2695 2742 2919 3209 4244 4346 4949 5268 7271 7289 7298 7312 7332 7336 7359 7366 7382 7396 7416 7436
 	}
-	manpower=0
+	manpower=534985
+	state_category=metropolis
 	buildings_max_level_factor=1.000
+	history = {
+	owner = HOE
+	buildings = {
+	infrastructure = 6
+	industrial_complex = 4
+	arms_factory = 3
+	dockyard = 1
+	}
+	add_core_of = HOE
+	}
 }

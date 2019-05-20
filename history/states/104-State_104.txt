@@ -2,8 +2,17 @@ state={
 	id=104
 	name="STATE_104"
 	provinces={
-		2991 3677 5070 5390 5814 6413 7486 8388 18520 18529 18573 18614 18621 18634 18667 18679 18728 18736 18779 
+		211 2750 3997 4530 4873 5440 7375 7387 7467
 	}
-	manpower=0
+	manpower=104398
 	buildings_max_level_factor=1.000
+	state_category = town
+	history = {
+	owner = HOE
+	add_core_of = HOE
+	buildings = {
+	infrastructure = 3
+	industrial_complex = 1
+	}
+	}
 }

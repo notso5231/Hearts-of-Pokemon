@@ -1,0 +1,8 @@
+SIN_Greater_Sinnoh = {
+color = rgb { 127 127 127 }
+color_ui = rgb { 200 200 200 }
+}
+SIN_Revolutionary_Commune = {
+color = rgb { 220 50 50 }
+color_ui = rgb { 230 52 52 }
+}

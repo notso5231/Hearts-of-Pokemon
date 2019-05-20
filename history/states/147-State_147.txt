@@ -2,19 +2,23 @@ state={
 	id=147
 	name="STATE_147"
 	provinces={
-		5752 7313 19481 19527 19588 19596 19629 19630
+		2263 2275 2658 4666 7667 7708 7726
 	}
-	manpower=2183
+	manpower=11254
 	buildings_max_level_factor=1.000
-	state_category = wasteland
+	state_category = pastoral
 	history = {
 	owner = SIN
 	add_core_of = SIN
 	buildings = {
 	infrastructure = 1
-	industrial_complex =
-	arms_factory =
-	air_base =
+	arms_factory = 0
+	industrial_complex = 0
+	air_base = 2
+	dockyard = 0
+	2275 = {
+	naval_base = 4
+	}
 	}
 	}
 }

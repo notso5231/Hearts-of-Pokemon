@@ -2,8 +2,19 @@ state={
 	id=150
 	name="STATE_150"
 	provinces={
-		1122 3022 3849 4187 4470 5323 6591 7012 8772 8984 9992 19686 19772 19786 19820 19831 19878 
+		1394 1756 2406 3627 3868 7698 7699 7718
 	}
-	manpower=0
+	manpower=53875
 	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history = {
+	owner = HOE
+	add_core_of = HOE
+	buildings = {
+	infrastructure = 3
+	1756 = {
+	naval_base = 3
+	}
+	}
+	}
 }

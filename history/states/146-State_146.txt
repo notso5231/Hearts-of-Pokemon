@@ -2,8 +2,19 @@ state={
 	id=146
 	name="STATE_146"
 	provinces={
-		2051 3041 4818 5651 19472 19477 19501 19525 19554 19602 19651 
+		1156 1218 3256 4430 7675
 	}
-	manpower=0
+	resources = {
+	steel = 19
+	}
+	manpower= 11895
+	state_category=pastoral
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SEV
+	buildings = {
+	infrastructure = 1
+	}
+	add_core_of = SEV
+	}
 }

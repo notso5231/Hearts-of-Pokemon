@@ -2,8 +2,17 @@ state={
 	id=220
 	name="STATE_220"
 	provinces={
-		8452 8885 21552 21594 21636 21652 21661 21720 
+		1792 3967 8210
 	}
-	manpower=0
+	manpower=34657 state_category=small_island
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SEV
+	buildings = {
+	infrastructure = 2
+	industrial_complex = 1
+	}
+	add_core_of = SEV
+	add_claim_by = SIN
+	}
 }

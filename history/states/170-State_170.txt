@@ -2,8 +2,17 @@ state={
 	id=170
 	name="STATE_170"
 	provinces={
-		854 1260 2682 3058 3419 7395 7763 9214 10522 20345 20381 20385 20415 20431 20448 20473 20493 20499 20511 20520 20544 20545 20578 20599 
+		72 118 1707 1946 3911 4869 7922 7955
 	}
-	manpower=0
+	manpower=
 	buildings_max_level_factor=1.000
+	state_category = large_town
+	history = {
+	owner = SEV
+	add_core_of = SEV
+	buildings = {
+	infrastructure = 4
+	industrial_complex = 2
+	}
+	}
 }

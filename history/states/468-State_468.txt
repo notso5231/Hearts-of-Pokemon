@@ -2,8 +2,18 @@ state={
 	id=468
 	name="STATE_468"
 	provinces={
-		2403 2891 3048 4114 4149 4874 5049 5498 6011 8520 8705 8957 9356 9756 14201 14330 14346 14358 14396 14423 14431 14492 14512 14520 
+		799 1036 1867 2006 2233 2313 2357 2400 3059 3303 3518 3757 4513 4854 5123 5410 7118 7151 7195 7215 7234 7243 7267
 	}
-	manpower=0
+	manpower=785609
+	state_category=city
 	buildings_max_level_factor=1.000
+	history = {
+	owner = HOE
+	buildings = {
+	infrastructure = 4
+	dockyard = 2
+	industrial_complex = 1
+	}
+	add_core_of = HOE
+	}
 }

@@ -19,4 +19,8 @@ bookmarks = {
 			SIN_Champ_Abdicate
 			}
 			}
+			"HOE"={
+			history = "HOE_POKEMON_WORLD_DESC"
+			ideology = neutrality
+			}
 			}

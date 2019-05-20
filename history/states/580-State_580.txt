@@ -2,8 +2,22 @@ state={
 	id=580
 	name="STATE_580"
 	provinces={
-		526 2299 2418 2659 3099 3457 4229 4505 5563 6247 7026 8200 8463 8949 9179 16535 16596 16602 16654 16659 16712 16787 16841 16862 
+		2022 2442 4191 5054 8092 8128 8133 8146
 	}
-	manpower=0
+	manpower=1376526
 	buildings_max_level_factor=1.000
+	state_category = city
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 7
+	industrial_complex = 6
+	air_base = 2
+	dockyard = 0
+	}
+	victory_points = {
+	8146 10
+	}
+	}
 }

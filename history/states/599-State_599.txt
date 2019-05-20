@@ -2,8 +2,23 @@ state={
 	id=599
 	name="STATE_599"
 	provinces={
-		904 1561 2187 3313 3471 4265 7590 8829 16915 16944 16966 17007 17127 17150 
+		196 809 978 1990 2617 2770 2855 2858 3041 4335 5274 5441 5446 8273 8274 8285 8290 8293 8310 8312 8316 8328
 	}
-	manpower=0
+	manpower=4752674
 	buildings_max_level_factor=1.000
+	state_category = metropolis
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 8
+	arms_factory = 2
+	industrial_complex = 4
+	air_base = 0
+	dockyard = 0
+	}
+	victory_points = {
+	196 50
+	}
+	}
 }

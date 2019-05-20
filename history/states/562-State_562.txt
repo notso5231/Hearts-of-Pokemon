@@ -2,8 +2,16 @@ state={
 	id=562
 	name="STATE_562"
 	provinces={
-		392 1028 1291 1803 1972 2150 2227 2990 3134 3209 3335 3749 3799 4426 4548 5332 5984 6494 8603 9234 10117 10326 16134 16175 16207 16230 16243 16279 16286 16316 16338 16346 16381 16404 16414 16471 16497 16519 16541 16548 
+		1234 2023 2324 4395 7918 7938 7963
 	}
-	manpower=0
+	manpower=56984
 	buildings_max_level_factor=1.000
+	state_category = rural
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 3
+	}
+	}
 }

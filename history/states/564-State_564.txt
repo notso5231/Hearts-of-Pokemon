@@ -2,8 +2,20 @@ state={
 	id=564
 	name="STATE_564"
 	provinces={
-		113 1515 4449 5345 6449 7445 8217 8409 8981 9662 10341 10414 16380 16432 16453 16491 16507 16540 16564 
+		1675 2204 3390 3705 7999 8001 8039
 	}
-	manpower=0
+	manpower=137398
 	buildings_max_level_factor=1.000
+	state_category = town
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 3
+	industrial_complex = 1
+	}
+	victory_points = {
+	2204 5
+	}
+	}
 }

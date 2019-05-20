@@ -2,8 +2,20 @@ state={
 	id=148
 	name="STATE_148"
 	provinces={
-		2819 5228 9642 19542 19560 19613 19701 
+		976 2799
 	}
-	manpower=0
+	manpower=12398
 	buildings_max_level_factor=1.000
+	state_category = small_island
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 0
+	industrial_complex = 0
+	arms_factory = 0
+	dockyard = 0
+	air_base = 0
+	}
+	}
 }

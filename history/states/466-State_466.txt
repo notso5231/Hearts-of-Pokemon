@@ -2,8 +2,16 @@ state={
 	id=466
 	name="STATE_466"
 	provinces={
-		291 566 962 2047 3787 5401 6412 6765 10145 10219 14009 14060 14077 14143 14193 14217 14285 14301 14338 14355 14364 14414 14439 14501 14515 14570 
+		1514 1883 3681 4616 4793 4860 4994 5182 7161 7184
 	}
-	manpower=0
+	manpower=122395
+	state_category=rural
 	buildings_max_level_factor=1.000
+	history = {
+	owner = HOE
+	buildings = {
+	infrastructure = 2
+	}
+	add_core_of = HOE
+	}
 }

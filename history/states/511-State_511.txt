@@ -2,8 +2,18 @@ state={
 	id=511
 	name="STATE_511"
 	provinces={
-		118 594 1404 1804 2009 2674 3094 3386 4817 5418 6957 7511 7546 8924 9914 15060 15094 15114 15177 15199 15200 15233 15255 15256 15311 15379 
+		108 350 367 1440 2167 2586 2824 2857 2957 2989 3157 3722 4782 5208 5317 5396 7508 7529 7576
 	}
-	manpower=0
+	manpower=873094
+	state_category=large_town
 	buildings_max_level_factor=1.000
+	history = {
+	owner = HOE
+	buildings = {
+	infrastructure = 3
+	industrial_complex = 2
+	arms_factory = 1
+	}
+	add_core_of = HOE
+	}
 }

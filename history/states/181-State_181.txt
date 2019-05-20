@@ -2,8 +2,30 @@ state={
 	id=181
 	name="STATE_181"
 	provinces={
-		271 4525 5774 9944 20615 20767 20788 20798 
+		239 262 355 542 1032 1711 2244 2452 2677 4032 4054 4173 4361 4759 5343 7949 7997 8040 8044 8066 8089 8090 8127 8136
 	}
-	manpower=0
+	manpower=783754
 	buildings_max_level_factor=1.000
+	state_category = city
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 3
+	arms_factory = 0
+	industrial_complex = 4
+	air_base = 4
+	dockyard = 1
+	8127 = {
+	naval_base = 3
+	}
+	}
+	victory_points = {
+	262 15 #LotV
+
+	}
+	victory_points = {
+	542 5 #league
+	}
+	}
 }

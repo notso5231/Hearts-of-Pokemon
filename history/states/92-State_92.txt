@@ -2,8 +2,8 @@ state={
 	id=92
 	name="STATE_92"
 	provinces={
-		6800 
+		8436 
 	}
-	manpower=0
+	manpower=1 state_category=wasteland
 	buildings_max_level_factor=1.000
 }

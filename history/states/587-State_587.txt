@@ -2,8 +2,23 @@ state={
 	id=587
 	name="STATE_587"
 	provinces={
-		656 982 1618 2834 3522 3903 5607 6145 6183 7726 8014 8843 9283 9827 16608 16624 16655 16660 16669 16720 16721 16772 16773 16806 16893 16954 16956 17016 
+		2435 2516 2828 5138 5264 8155 8167 8175 8206 8218
 	}
-	manpower=0
+	manpower=345235
 	buildings_max_level_factor=1.000
+	state_category = large_town
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 4
+	arms_factory = 0
+	industrial_complex = 2
+	air_base = 0
+	dockyard = 0
+	}
+	victory_points = {
+	5138 10 #floaroma
+	}
+	}
 }

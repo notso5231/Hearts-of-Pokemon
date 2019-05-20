@@ -2,8 +2,19 @@ state={
 	id=223
 	name="STATE_223"
 	provinces={
-		647 21582 21584 21627 21642 21705 
+		3548
 	}
-	manpower=0
+	manpower=8192
 	buildings_max_level_factor=1.000
+	state_category = small_island
+	history = {
+	owner = SIN
+	add_core_of = SEV
+	buildings = {
+	air_base = 1
+	3548 = {
+	naval_base = 1
+	}
+	}
+	}
 }

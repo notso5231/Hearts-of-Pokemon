@@ -2,8 +2,16 @@ state={
 	id=197
 	name="STATE_197"
 	provinces={
-		3458 6249 20850 20891 20950 
+		2108
 	}
-	manpower=0
+	manpower=3212
+	state_category=tiny_island
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SIN
+	buildings = {
+	infrastructure = 3
+	}
+	add_claim_by = SEV
+	}
 }

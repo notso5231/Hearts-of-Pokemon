@@ -1,4 +1,4 @@
-add_namespace = sinnoh
+﻿add_namespace = sinnoh
 country_event = {
 	id = sinnoh.1
 	title = sinnoh.1.t
@@ -22,32 +22,33 @@ country_event = {
 	}
 
 	}
-country_event = {
+country_event = { #3rd path
 	id = sinnoh.2
 	title = sinnoh.2.t
 	desc = sinnoh.2.d
 
-	fire_only_once = yes
-	mean_time_to_happen = {
-	days = 1
-	}
 
-	trigger = {
-SIN = {
-fascism > .55
-NOT = {
+
+			trigger = {
+		SIN = {
+	fascism > .55
+	has_idea = far_right_sinnoh
+	NOT = {
 has_idea = far_right_sinnoh_strong
-}
-}
+				}
+					}
+						}
+mean_time_to_happen = {
+days = 0
 }
 
 	option = {
 	name = sinnoh.2.a
 		add_political_power = -100
-		swap_ideas = {
+			swap_ideas = {
 				remove_idea = far_right_sinnoh
 				add_idea = SIN_widespread_protest
-			}
+				}
 
 	}
 	option = {
@@ -56,11 +57,8 @@ has_idea = far_right_sinnoh_strong
 		swap_ideas = {
 				remove_idea = far_right_sinnoh
 				add_idea = far_right_sinnoh_strong
+				}
 			}
-
-	}
-
-
 	}
 country_event = {
 id = sinnoh.5
@@ -69,34 +67,106 @@ desc = sinnoh.5.d
 fire_only_once = yes
 is_triggered_only = yes
 	option = {
-	name = sinnoh.2.a
-	stability_factor = 0.2
+	name = sinnoh.5.a
+	add_stability = 0.2
 	create_country_leader = {
 	name = "Barry"
 	desc = "POLITICS_SIN_BARRY_DESC"
 	expire = "2400.1.1"
 	ideology = liberalism
 	}
+	}
 	option = {
-	name = sinnoh.2.b
-	stability_factor = 0.1
+	name = sinnoh.5.b
+	immediate = {
+		add_stability = 0.1
+	}
+	add_stability = 0.1
 	create_country_leader = {
 	name = "Jubilife Jenny"
 	desc = "POLITICS_SIN_JENNY_DESC"
 	expire = "2400.1.1"
-	ideology = "conservatism"
+	ideology = conservatism
+	}
 	}
 	option = {
-	name = sinnoh.2.c
+	name = sinnoh.5.c
 	create_country_leader = {
 	name = "Mr. Contesta"
 	desc = "POLITICS_SIN_CONTESTA_DESC"
 	expire = "2400.1.1"
-	ideology = "conservatism"
+	ideology = conservatism
 	}
 	}
 	}
+	country_event = {
+		id = sinnoh.6
+		title = sinnoh.6.t
+
+
+		fire_only_once = yes
+		desc = sinnoh.6.d
+		trigger = {
+	SIN = {
+	fascism > .45
+	has_idea = far_right_sinnoh
+	}
+	}
+	mean_time_to_happen = {
+	days = 180
+	modifier = {
+	factor = 0.5
+	fascism > .55
 	}
 	}
 
-}
+		option = {
+		name = sinnoh.6.a
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_popularity = {
+		ideology = fascism
+		popularity = -0.05
+		}
+		}
+	}
+	country_event = {
+		id = sinnoh.7
+		title = sinnoh.7.t
+		fire_only_once = yes
+		desc = sinnoh.7.d
+
+			option = {
+			name = sinnoh.7.a
+			set_politics = {
+				ruling_party = fascism
+			}
+			end_puppet = IPR
+			HOE = {
+			country_event = {id = hoenn.1 hours = 6}
+			}
+			IPR = {
+			country_event = {id = protectorate.1 hours = 6}
+			}
+			every_other_country = {
+			news_event = {id = news.1 hours = 12}
+			}
+			}
+	}
+	country_event = {
+		id = sinnoh.8
+		title = sinnoh.8.t
+		fire_only_once = yes
+		desc = sinnoh.8.d
+
+			option = {
+			name = sinnoh.8.a
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			country_event = {id = sinnoh.7 days = 45}
+			}
+	}

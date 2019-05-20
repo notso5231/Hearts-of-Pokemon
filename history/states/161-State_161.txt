@@ -2,8 +2,16 @@ state={
 	id=161
 	name="STATE_161"
 	provinces={
-		1295 2622 2872 6802 7314 8512 9082 9535 9868 20062 20071 20119 20220 20231 20266 20267 
+		343 2087 3501 4226 4755 7813 7814
 	}
-	manpower=0
+	manpower=81875
+	state_category=rural
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SEV
+	buildings = {
+	infrastructure = 3
+	}
+	add_core_of = SEV
+	}
 }

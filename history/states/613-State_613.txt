@@ -2,8 +2,23 @@ state={
 	id=613
 	name="STATE_613"
 	provinces={
-		654 1213 2023 2121 2788 2794 3082 3126 3581 3752 4459 4528 4573 7006 7147 7748 8093 8131 8427 8793 9605 17311 17320 17342 17389 17451 17504 17505 17506 17530 17555 17584 17636 17673 17731 
+		1697 3827 8380 8389
 	}
-	manpower=0
+	manpower=102363
 	buildings_max_level_factor=1.000
+	state_category = town
+	history = {
+	owner = SIN
+	add_core_of = SIN
+	buildings = {
+	infrastructure = 2
+	arms_factory = 0
+	industrial_complex = 1
+	air_base = 0
+	dockyard = 1
+	}
+	victory_points = {
+	8380 3 #twinleaf
+	}
+	}
 }

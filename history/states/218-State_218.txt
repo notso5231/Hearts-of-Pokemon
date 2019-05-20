@@ -2,8 +2,22 @@ state={
 	id=218
 	name="STATE_218"
 	provinces={
-		768 21534 21585 21628 
+	8209 3396 8259 186
 	}
-	manpower=0
+	manpower=67598
+	state_category=town
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SEV
+	buildings = {
+	infrastructure = 4
+	industrial_complex = 1
+	arms_factory = 1
+	air_base = 3
+	8259 = {
+	naval_base = 5
+	}
+	}
+	add_core_of = SEV
+	}
 }

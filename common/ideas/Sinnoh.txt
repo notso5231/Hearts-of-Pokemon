@@ -71,6 +71,7 @@ ideas = {
 		industrial_capacity_factory = -0.25
 		conscription_factor = -0.15
 		stability_weekly = -0.005
+		stability_factor = -0.05
 		}
 		}
 	SIN_widespread_protest = {
@@ -92,6 +93,7 @@ ideas = {
 		industrial_capacity_factory = -0.7
 		conscription_factor = -0.15
 		stability_weekly = -0.005
+		stability_factor = -0.15
 		}
 		}
 		SIN_Champ_Abdicate = {
@@ -328,7 +330,7 @@ ideas = {
 			 modifier = {
 			 drift_defence_factor = 0.5
 			 stability_factor = 0.2
-			 neutrality_drift = 0.1
+			 monarchism_drift = 0.1
 
 			}
 			}
@@ -344,7 +346,7 @@ ideas = {
 			 modifier = {
 			 drift_defence_factor = 0.5
 			stability_factor = 0.2
-			 neutrality_drift = 0.25
+			 monarchism_drift = 0.25
 
 
 			}
@@ -366,5 +368,61 @@ ideas = {
 
 			}
 			}
+			SIN_dialga = { #master of time
+			picture = idea_dialga
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+			 modifier = {
+			 army_speed_factor = 0.10
+			 production_speed_buildings_factor = 0.15
+			 industrial_capacity_factory = 0.15
+			 industrial_capacity_dockyard = 0.15
+			 naval_speed_factor = 0.10
+			 research_speed_factor = 0.05
+			}
+			}
+			SIN_palkia = { #master of space
+			picture = idea_palkia
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+			 modifier = {
+			 max_fuel_factor = 0.20
+			 max_dig_in = 5.0
+			 supply_consumption_factor = -0.10
+			 local_resources_factor = 0.15
+			 global_building_slots_factor = 0.20
+			 consumer_goods_factor = -0.05
+			}
+			}
+			SIN_giratina = { #army buffs
+			picture = idea_giratina
+			allowed = {
+				always = no
+				}
+			allowed_civil_war = {
+				always = yes
+				}
+			removal_cost = -1
+			 modifier = {
+			 offence = 0.10
+			 defence = 0.20
+			 land_reinforce_rate = 0.05
+			 army_morale_factor = 0.15
+			 army_org_factor = 0.05
+			 training_time_factor = -0.1
+			}
+			}
+
+
 			}
 			}

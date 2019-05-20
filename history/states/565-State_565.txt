@@ -2,8 +2,16 @@ state={
 	id=565
 	name="STATE_565"
 	provinces={
-		84 243 1286 1373 5120 6058 6751 7502 7519 9298 9598 15780 15802 15836 15845 15871 15880 15988 16452 16469 16470 16513 16518 16576 
+	 842 2118 2152 2579 3485 4082 4314 8073 8087 8108 8117 8138 8141 8153
 	}
-	manpower=0
+	manpower=87564
+	state_category=town
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SEV
+	buildings = {
+	infrastructure = 3
+	}
+	add_core_of = SEV
+	}
 }

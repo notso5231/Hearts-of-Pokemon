@@ -2,8 +2,15 @@ state={
 	id=180
 	name="STATE_180"
 	provinces={
-		2789 7238 20560 20563 20604 20605 20655 20687 20741 20787 
+		683 5128 7946 7977 4576
 	}
-	manpower=0
+	manpower=11985
+	state_category=small_island
 	buildings_max_level_factor=1.000
+	history = {
+	owner = SIN
+	buildings = {
+	infrastructure = 2
+	}
+	}
 }

@@ -2,9 +2,9 @@ state={
 	id=1
 	name="STATE_1"
 	provinces={
-		22390
+		1387 1406 3004 3611 4613 5368 5476 8428 8431
 	}
-	manpower=152
-	state_category = tiny_island
+	manpower=1 state_category=wasteland
+
 	buildings_max_level_factor=1.000
 }

@@ -59,4 +59,38 @@ add_stability = -0.1
   }
 }
 }
+  military_support_revolution = {
+    cost = 50
+    icon =
+    days_re_enable = 90
+      visible = {
+        is_ai = yes
+        has_civil_war = yes
+      }
+      available = {
+        has_civil_war = yes 
+        surrender_progress > 0.1
+      }
+      complete_effect = {
+        hidden_effect = {
+          add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 250
+            producer = ROOT
+          }
+          add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 25
+            producer = ROOT
+          }
+          add_equipment_to_stockpile = {
+            type = transport_pokemon
+            amount = 50
+            producer = ROOT
+          }
+          add_manpower = 1000
+        }
+      }
+  }
 }
+

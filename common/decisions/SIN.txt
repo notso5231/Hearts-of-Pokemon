@@ -1,0 +1,30 @@
+SIN_island_claims = {
+    SIN_assert_sov_protectorate = {
+        cost = 150
+        icon = 
+        visible = {
+            tag = SIN 
+            has_dlc = "Together for Victory"
+            has_completed_focus = SIN_Island_Protection
+            SIP = {
+                   is_subject_of = SIN
+            }
+        }
+        available = {
+            tag = SIN 
+            has_dlc = "Together for Victory"
+            has_completed_focus = SIN_Island_Protection
+            SIP = {
+                   is_subject_of = SIN
+            }
+            has_war = no
+        }
+        complete_effect = {
+            SIP = {
+                country_event = isleprot.1
+            }
+            war_support_factor = -0.05
+            add_idea = SIN_inefficient_integration
+        }
+    }
+}
